@@ -1,0 +1,222 @@
+body {
+    
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+header {
+    display:flex;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+a:visited {
+    color: black;
+}
+
+
+h1{
+    flex: 1;
+    flex-wrap: nowrap;
+    font-size: 50px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-column-gap: 15px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.object {
+    flex: 0 0 auto;
+    margin: 15px;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 500px;
+ 
+
+    border: solid rgb(110, 110, 110) 5px;
+    border-radius: 15px;
+    background: white;
+}
+
+.imgbox {
+    width: 500px;
+    height: 400px;
+
+    border-bottom: solid rgb(110, 110, 110) 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: white;
+
+    text-align: center;
+
+}
+
+.textbox {
+    width: 500px;
+    height: 90px;
+
+    border-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: white;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: white;
+    border-radius: 15px;
+    position: sticky;
+
+    width: 100%;
+    height: 25px;
+
+    bottom:0;
+
+    text-align: center;
+}
+
+
+@media screen and (max-width:1500px) {
+    .portfolio {
+
+        grid-template-columns: repeat(2, 500px);
+    
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .portfolio {
+
+        grid-template-columns: auto;
+    
+    }
+}
+
+/*------- Navigation -----*/
+
+nav {
+    margin: 0 auto;
+
+
+    width:70%;
+    background: white;
+    border-radius: 15px;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    float: center;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: darkgrey;
+    color: yellow;
+}
+
+nav ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 19px;
+    left: -10000px;
+    width: 150px;
+}
+
+nav ul li ul li {
+    background: gray;
+    display: block;
+    color: black;
+    border-bottom: rgb(196, 196, 196) 1px solid;
+}
+
+nav ul li ul li:hover {
+    background:darkgrey;
+}
+
+nav ul li:hover ul{
+    display: block;
+    left: 0px;
+}
+
+
+/*.a {
+    background-image: url("../img/Dunham-Pft1b.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.b {
+    background-image: url("../img/Dunham-PkgFinal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.c {
+    background-image: url("../img/Dunham-Logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.d {
+    background-image: url("../img/Dunham-label.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.e {
+    background-image: url("../img/Dunham-Pjt4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.f {
+    background-image: url("../img/Dunham-Pjt3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
